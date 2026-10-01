@@ -1,0 +1,47 @@
+{
+  "name": "emdash-biolink",
+  "version": "1.0.0",
+  "description": "A link-in-bio theme for EmDash CMS on Cloudflare Workers — blocks-based link pages with social icons, projects, themes, and light/dark modes.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitdoze/emdash-biolink-theme.git"
+  },
+  "keywords": [
+    "emdash",
+    "emdash-theme",
+    "astro",
+    "cloudflare",
+    "link-in-bio",
+    "biolink"
+  ],
+  "emdash": {
+    "label": "Biolink",
+    "seed": "seed/seed.json"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "astro build && wrangler deploy",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/cloudflare": "^14.3.1",
+    "@astrojs/react": "^6.0.5",
+    "@emdash-cms/cloudflare": "^1.0.1",
+    "@iconify-json/lucide": "^1.2.138",
+    "@iconify-json/simple-icons": "^1.2.98",
+    "astro": "^7.3.2",
+    "astro-icon": "^1.2.0",
+    "emdash": "^1.0.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@cloudflare/workers-types": "^5.20260820.1",
+    "wrangler": "^4.125.0"
+  }
+}
